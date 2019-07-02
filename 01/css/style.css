@@ -8,6 +8,18 @@
 .winter{
     color: #48a7ff;
 }
+.winter.uwinter{
+    list-style-image: url("../img/snowflake1.png");
+}
+.spring{
+    color: #30c500;;    
+}   
+.sumer{
+    color:#ffd171;;
+}
+.autumn{
+    color: #ff7100;
+}
 #30c500;
 #ffd171;
 #ff7100;
@@ -21,7 +33,7 @@ h1 {
 ol {
     display: inline-block;
     text-align: left;
-    list-style-position: inside;
+    /*list-style-position: inside;*/
     font-size: 30px;
     font-family: Arial;
     font-weight: bold;
@@ -31,6 +43,7 @@ ul {
     font: initial;
     font-family: Arial;
     font-size: 30px;
+    list-style-image: url("../img/snowflake1.png");
 }
 
 /*div {
