@@ -1,0 +1,39 @@
+.body1 {
+    width: 90%;
+    margin: 0 auto;
+    align-content: center;
+    text-align: center;
+
+}
+.winter{
+    color: #48a7ff;
+}
+#30c500;
+#ffd171;
+#ff7100;
+
+
+h1 {
+    font-size: 30px;
+
+}
+
+ol {
+    display: inline-block;
+    text-align: left;
+    list-style-position: inside;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+ul {
+    font: initial;
+    font-family: Arial;
+    font-size: 30px;
+}
+
+/*div {
+    text-align: center;
+    align-content: center;
+}*/
