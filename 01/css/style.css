@@ -1,39 +1,40 @@
 .body1 {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    align-content: center;
     text-align: center;
 
 }
 .winter{
     color: #48a7ff;
 }
-.winter.uwinter{
+.uwinter{
     list-style-image: url("../img/snowflake1.png");
 }
 .spring{
     color: #30c500;;    
+}
+.uspring{
+    list-style-image: url("../img/leaflet.png");
 }   
 .sumer{
     color:#ffd171;;
 }
+.usumer{
+    list-style-image: url("../img/sumer.png");
+}
 .autumn{
     color: #ff7100;
 }
-#30c500;
-#ffd171;
-#ff7100;
-
-
+.uautumn{
+    list-style-image: url("../img/droplet.png");
+}
 h1 {
     font-size: 30px;
-
 }
 
 ol {
     display: inline-block;
     text-align: left;
-    /*list-style-position: inside;*/
     font-size: 30px;
     font-family: Arial;
     font-weight: bold;
@@ -43,10 +44,4 @@ ul {
     font: initial;
     font-family: Arial;
     font-size: 30px;
-    list-style-image: url("../img/snowflake1.png");
 }
-
-/*div {
-    text-align: center;
-    align-content: center;
-}*/
