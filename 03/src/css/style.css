@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Cuprum&display=swap');
 
 * {
     margin: 0;
@@ -7,11 +6,9 @@
 
 header {
     margin-top: 200px;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-body {
-    background: url("../img/ep_naturalwhite.png")
+    font-family: Arial;
+    font-weight: bold;
+    background: #d74931;
 }
 
 li {
@@ -20,47 +17,36 @@ li {
 
 .menu>ul >li {
     position: relative;
-    border-right: 1px solid #c7c8ca;
+    list-style: none;
+    background: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-position: left;   
 }
 
 .menu>ul >li:first-child {
-    border-left: 1px solid #c7c8ca;
+    /*border-left: 1px solid #c7c8ca;*/
+    list-style: none;
+    background: none;
 }
 
 .menu>ul li a {
     display: block;
     padding: 15px 30px 15px 40px;
-    font-size: 14px;
-    color: #454547;
+    font-size: 15px;
+    color: #ffffff;
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.3s ease;
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f5f5f5+0,c4c5c7+100 */
-    background: #f5f5f5;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #f5f5f5 0%, #c4c5c7 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f5f5f5 0%, #c4c5c7 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f5f5f5 0%, #c4c5c7 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f5f5', endColorstr='#c4c5c7', GradientType=0);
-    /* IE6-9 */
-    border: 1px solid #c7c8ca;
+    
 }
 .menu li ul{
-    min-width: 150px;
+    width: 70px;
     position: absolute;
     display: none;
 }
-/*.menu > li > ul li{
-    border: 1px solid #c7c8ca !important;
-}*/
 .menu li > ul li a{
     background: #e4e4e5;
-    /*margin: 10px;*/
     text-transform: lowercase;
-    border: 
 }
 
 .menu>ul {
@@ -76,10 +62,8 @@ li {
 }
 
 .menu li a:hover {
-    background: #454547;
-    color: #c7c8ca;
+    color: #f4da49;
     transition: all 0.3s ease;
-    box-shadow: 1px 5px 10px -5px black;
 }
 .menu li:hover>ul{
     display: block;
