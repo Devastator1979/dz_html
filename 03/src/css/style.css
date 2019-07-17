@@ -3,83 +3,52 @@
     margin: 0;
     padding: 0;
 }
-
-header {
-    margin-top: 200px;
-    font-family: Arial;
-    font-weight: bold;
-    background: #d74931;
+.header{
+    background: gray;
+    height: 80px;
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
 }
+.aside{
+    background: gray;
+    height: 80px;
+    width: 235px;
+    float: left;
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
 
-li {
-    list-style-type: none;
 }
+.main{
+    background: gray;
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
+    margin-left: 325px;
 
-.menu>ul >li {
-    position: relative;
-    list-style: none;
-    background: url(../img/border.png);
-    background-repeat: no-repeat;
-    background-position: left;   
 }
+.footer{
+    background: gray;
+    height: 80px;
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
 
-.menu>ul >li:first-child {
-    /*border-left: 1px solid #c7c8ca;*/
-    list-style: none;
-    background: none;
 }
-
-.menu>ul li a {
-    display: block;
-    padding: 15px 30px 15px 40px;
-    font-size: 15px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.3s ease;
+.container{
+    width: 1000px;
+    margin: 0 auto;
     
 }
-.menu li ul{
-    width: 70px;
-    position: absolute;
-    display: none;
+@media (max-width: 1000px){
+    .container{
+        width: auto;
+    }
 }
-.menu li > ul li a{
-    background: #e4e4e5;
-    text-transform: lowercase;
-}
-
-.menu>ul {
-    display: flex;
-    justify-content: center;
-}
-
-.menu>ul li>a i.fa {
-    position: absolute;
-    top: 15px;
-    left: 12px;
-    font-size: 18px;
-}
-
-.menu li a:hover {
-    color: #f4da49;
-    transition: all 0.3s ease;
-}
-.menu li:hover>ul{
-    display: block;
-}
-.block{
-    height: 200px;
-    background: #454547;
-    color: white;
-    overflow: hidden;
-    position: absolute;
-}
-.block1{
-    height: 100px;
-    width: 200px;
-    background: red;
-    position: relative; 
-    top: 50px;
-    left 100px;
+@media (max-width: 576px){
+    .aside{
+        width: auto;
+        float: none;
+    }
+    .main{
+        margin: 10px;
+    }
 }
