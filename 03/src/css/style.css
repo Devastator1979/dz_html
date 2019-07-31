@@ -22,7 +22,7 @@ body {
 
 header {
     background-color: #d74931;
-    height: 80px;
+    
 }
 
 aside {
@@ -87,6 +87,19 @@ td:last-child{
  textarea{
      width: 100%;
      height: 50px;
+ }
+ .clear{
+     clear: both;
+ }
+ .site-contact-info{
+     float: left;
+     padding:  20px 0 0 54px;
+     color: #eee;
+     font-size: 20px;
+ }
+ .phone {
+     position: relative;
+     position: 60px;
  }
 @media screen and (max-width: 1000px) {
  .container {
