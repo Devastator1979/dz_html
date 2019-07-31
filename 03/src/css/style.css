@@ -91,6 +91,10 @@ td:last-child{
  .clear{
      clear: both;
  }
+ .logo{
+     float: left;
+     padding:  20px 0 0 0;
+ }
  .site-contact-info{
      float: left;
      padding:  20px 0 0 54px;
