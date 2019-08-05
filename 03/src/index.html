@@ -9,34 +9,86 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="RightFixImg"><img src="img/Daj.png" alt=""></div>
+    <header>
         <div class="container">
-            Шапка сайта
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Продукция</a></li>
-                    <li><a href="#">Сервис</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </header>
-        </div>
+            <div class="logo">
+                <img src="../src/img/logo.png" alt="logo">
+            </div>
+            <div class="site-contact-info">
+                <div class="phone">
+                    <div class="phone-number">
+                        +7 (965) 130-34-75
+                    </div>
+                    <div class="phone-order-call">
+                        <a href="#">Закажи бесплатный звонок!</a>
+
+                    </div>
+                </div>
+                <div class="mail" href="blababal@mail.ru">
+                    blababal@mail.ru
+                </div>
+            </div>
+            <div class="clear"></div>
+    </header>
     </div>
+    </head>
     <div class="container">
-        <div class="aside">
+        <aside>
             Сайбар
-        </div>
-        <div class="main">
+            <form>
+                <label>Ваше ФИО*
+                    <input type="text" name="firstname" placeholder="ФИО" required></label>
+                <label>Телефон*
+                    <input type="tel" name="phone" placeholder="+375 (XX) X-XX-XX-XX" pattern="\+375-{0-9}(3)" required></label>
+                <label>E-mail
+                    <input type="email" name="mail" value="" required></label>
+                <textarea placeholder="Задайте свой вопрос"></textarea>
+                <button type="submit" class="zakaz">Заказать звонок</button>
+            </form>
+        </aside>
+        <main>
             Основное содержимое
-        </div>
+            <table>
+                <thead>
+                    <tr class="heade1">
+                        <th>Арматура А3</th>
+                        <th>скачать прайс</th>
+                    </tr>
+                    <tr class="heade2">
+                        <th>наименование товара</th>
+                        <th>цена с НДС, Р</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Арматура A500C 8мм</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>Арматура A500C 10мм</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>Арматура A500C 12мм</td>
+                        <td>30000</td>
+                    </tr>
+                    <tr>
+                        <td>Арматура A500C 14мм</td>
+                        <td>30000</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </main>
     </div>
-    <div class="footer">
-        <div class="container">
-            Футер
-        </div>
-    </div>
+    <div class="clear"></div>
+    <footer>
+
+        Футер
+
+    </footer>
+
 </body>
 
 </html>
