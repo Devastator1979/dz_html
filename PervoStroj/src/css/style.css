@@ -1,64 +1,103 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 20px;
 }
-header{
-    background-color: #ccc;
-    height: 80px;
-    margin: 10px;
+div.rightFixedImg{
+    right: -20px;
+    top: 100px;
+    position: fixed;
 }
-aside{
-    background-color: #ddd;
-    height: 80px;
-    margin: 10px;
-    float: left;
-    width: 235px;
+div.leftFixedImg{
+    left: -420px;
+    top: 400px;
+    position: fixed;
 }
-main{
-    background-color: #eee;
-    height: 200px;
-    margin: 10px;
-    margin-left: 315px;
-}
-footer{
-    background-color: #ccc;
-    height: 80px;
-    margin: 10px;
-}
-.container{
+.container {
     width: 1000px;
     margin: 0 auto;
     padding: 0 14px;
 }
-/*PC 1000px*/
-@media screen and (max-width: 1000px){
-    .container{
-        width: auto;
-    }
+
+header {
+    background-color: #d74931;
+    height: 80px;
 }
-/* pad 576px*/
-@media screen and (max-width: 576px){
-    header{
-        margin: 0;
-    }
-    .container{
-        margin: 0;
-        padding: 0;
-    }
-    aside{
-        float: none;
+
+aside {
+    background-color: #ddd;
+    height: 80px;
+    float: left;
+    width: 235px;
+}
+
+main {
+    background-color: #eee;
+    margin-left: 315px;    /* 235x (ширина сайдбара) + 80px */
+}
+
+footer {
+    background-color: #1a1b23;
+    height: 80px;
+    color:#e7e7e7;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background: #f2f2f2;
+}
+th{
+    background: #d74a31;
+}
+table td,
+table th{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+}
+table td:first-child,
+table th:first-child{
+    text-align: left;
+}
+table tr:nth-child(odd){
+    background: #e8e8e8;
+}
+.subtitle{
+    background: #b43d2e;
+}
+   
+@media screen and (max-width: 1000px) {
+ .container {
         width: auto;
-        margin: 0;
-            
     }
-    main{
+
+}
+@media screen and (max-width: 1720px) {
+    div.rightFixedImg {
+           display: none;
+       }
+   }
+   @media screen and (max-width: 1800px) {
+    div.leftFixedImg {
+        display: none;
+    }
+   }
+
+@media screen and (max-width: 576px) {
+
+    aside {
+        width: auto;
+        float: none;
+    }
+
+    main {
         margin: 0;
     }
-    footer{
-        margin: 0;
+    .container {
+        padding: 0;
     }
 }
