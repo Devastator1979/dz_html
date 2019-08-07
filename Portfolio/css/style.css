@@ -25,12 +25,12 @@ header .navbar{
     text-align: center;
 }
 .about img{
-    width: 30%;
-    border-radius: 50%;
+    width: 40%;
+    border-radius: 70%;
     animation: jamp 4.5s infinite;
 }
 .about img:hover{
-    animation: shake 0.6s;
+    animation: shake 0.3s;
 }
 .about span{
     color: #888;
