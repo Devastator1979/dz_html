@@ -17,7 +17,30 @@
     </header> <!-- header-->
     <div class="container">
         <aside>
-            сайдбар
+            <form name="callback" action="" autocomplete="off" method="POST">
+                <label for="">
+                    Ваш ФИО*:
+                    <input type="text" name="fio" required>
+                </label>
+                <label for="" placeholder="7">
+                    Телефон*:
+                    <input pattern="\+7-[0-9]{3}-[0-9]{3}" placeholder="+7-xxx-xxx" type="tel" name="phone" required>
+                </label>
+                <label for="">E-mail*:
+                    <input type="email" name="email" required>
+                </label>
+                <label for="">
+                    Удобное время для звонка*:
+                    <select name="time">
+                        <option value="9">9:00-10:00</option>
+                        <option value="10">10:00-11:00</option>
+                        <option value="11">11:00-12:00</option>
+                        <option value="12">12:00-13:00</option>
+                    </select>
+                </label>
+                <textarea placeholder="Коротко опишите ваш вопрос"></textarea>
+                <button type="submit">Заказать звонок</button>
+            </form>
         </aside>
         <main>
             <table>
